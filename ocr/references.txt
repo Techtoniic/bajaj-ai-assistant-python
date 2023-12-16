@@ -1,0 +1,11 @@
+1. How to Preprocess Images for Text OCR in Python (OCR in Python Tutorials 02.02) | How to Preprocess Images for Text OCR in Python (OCR in Python Tutorials 02.02)|
+https://www.youtube.com/watch?v=ADV-AjAXHdc&list=PL2VXyKi-KpYuTAZz__9KVl1jQz74bDG7i&index=4
+
+2. Tesseract Open Source OCR Engine | Google | Licensed under Apache License 2.0 |
+https://github.com/tesseract-ocr/tesseract
+
+3. How to automatically deskew (straighten) a text image using OpenCV | Becoming Human: Artificial Intelligence Magazine | Leo Ertuna |
+https://becominghuman.ai/how-to-automatically-deskew-straighten-a-text-image-using-opencv-a0c30aed83df
+
+4. How to Separate a Footnote from Body Text in Python with OpenCV | wjbmattingly |
+https://github.com/wjbmattingly/ocr_python_textbook/blob/main/04_04_separate_footnotes.ipynb
