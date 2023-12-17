@@ -18,12 +18,8 @@ class Database:
 
     def addData(self, entry, category):
         if category == 1:
-            post = self.db["invoice"]
+            post = self.db["content-matrix"]
         elif category == 2:
-            post = self.db["medical-report"]
-        elif category == 3:
-            post = self.db["doctor-prescription"]
-        elif category == 4:
             post = self.db["image-matrix"]
         else:
             return ValueError("Category out of scope.")
@@ -41,7 +37,3 @@ class Database:
     def __del__(self):
         # self.client.close()
         print("MongoDB database connection lost...")
-
-
-
-Database()

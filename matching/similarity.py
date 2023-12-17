@@ -10,8 +10,8 @@ class SimilarityCalc:
     def sift(img1, img2):
 
         # Load your images
-        img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
-        img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
+        # img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
+        # img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
 
         sift = cv2.SIFT_create()
         kp1, des1 = sift.detectAndCompute(img1, None)
@@ -34,8 +34,8 @@ class SimilarityCalc:
     def ssd(img1, img2):
 
         # Load your images
-        img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
-        img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
+        # img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
+        # img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
 
         result = cv2.matchTemplate(img1, img2, cv2.TM_SQDIFF_NORMED)
 
@@ -50,8 +50,8 @@ class SimilarityCalc:
     def ncc(img1, img2):
 
         # Load your images
-        img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
-        img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
+        # img1 = cv2.imread(img1, cv2.IMREAD_GRAYSCALE)
+        # img2 = cv2.imread(img2, cv2.IMREAD_GRAYSCALE)
 
         result = cv2.matchTemplate(img1, img2, cv2.TM_CCOEFF_NORMED)
 
