@@ -12,7 +12,7 @@ class Database:
         self.client = MongoClient(js['MongoDBContents'][0]['Connection String'])
         print("MongoDb Atlas Connection established...")
 
-        self.db = self.client['bajaj-ai-assistant']
+        self.db = self.client['ai-doc']
         # post = self.db.entities
         print("MongoDB Database Connection established...")
 
