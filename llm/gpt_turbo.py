@@ -10,17 +10,16 @@ class DataPromptGPT:
         self.client = OpenAI(api_key = os.environ['OPENAI_API_KEY'])
 
         self.invoice_prompt = "The below paragraph is extracted from a invoice image using OCR. " \
-                              "Give me the name of the customer, the Invoice number, total cost, date and " \
+                              "Give me the name of the customer, the Invoice number, total cost, date, phone number and " \
                               "Company name from the paragraph below. Respond in JSON, if you fail to find " \
-                              "any entity then skip that entity."
+                              "any entity then return null for that entity."
         self.report_prompt = "The below paragraph is extracted from a medical report image using OCR. " \
                               "Give me the name of the customer, the Invoice number, total cost, date and " \
                               "Company name from the paragraph below. Respond in JSON, if you fail to find " \
-                              "any entity then skip that entity."
+                              "any entity then return null for that entity."
         self.prescription_prompt = "The below paragraph is extracted from a prescription image using OCR. " \
-                              "Give me the name of the customer, the Invoice number, total cost, date and " \
-                              "Company name from the paragraph below. Respond in JSON, if you fail to find " \
-                              "any entity then skip that entity."
+                              "Give me the name of the customer, doctor name and date from the paragraph below. " \
+                              "Respond in JSON, if you fail to find any entity then return null for that entity."
 
     def getOutput(self, text, category):
 

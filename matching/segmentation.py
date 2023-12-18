@@ -37,3 +37,25 @@ class ImageSegment:
 
         return header, body, footer
 
+    @staticmethod
+    def HBCrop(image_path, header_percentage = 18):
+        # Open the image
+        image = Image.open(image_path)
+
+        # Get image dimensions
+        width, height = image.size
+
+        # Calculate the crop height for the header (top 18%)
+        crop_height_header = int(0.18 * height)
+
+        # Crop the header
+        header = image.crop((0, 0, width, crop_height_header))
+
+        # Crop the body (rest of the image)
+        body = image.crop((0, crop_height_header, width, height))
+
+        # Save cropped images
+        # header.save('header.jpg')
+        # body.save('body.jpg')
+
+        return header, body
