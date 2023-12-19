@@ -1,6 +1,6 @@
 # Importing all the required modules
 from PIL import Image
-
+import os
 class ImageSegment:
 
     def __init__(self):
@@ -31,9 +31,10 @@ class ImageSegment:
         body = image.crop(body_box)
 
         # Save cropped images
-        # header.save('header.jpg')
-        # body.save('body.jpg')
-        # footer.save('footer.jpg')
+        # header.save('./test/report/header.jpg')
+        print(os.getcwd())
+        body.save('./test/db/report/report1.jpg')
+        # footer.save('./test/report/footer.jpg')
 
         return header, body, footer
 

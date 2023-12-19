@@ -28,8 +28,19 @@ class Database:
         print("Successfully added data to test.entities...")
         return id
 
-    def getData(self):
-        pass
+    def getData(self, query):
+        post = self.db["content-matrix"]
+        return post.find(query)
+
+    def queryData(self, doc_type, category):
+        if category == 1:
+            post = self.db["content-matrix"]
+            return post.find({"doc_type": doc_type})
+        elif category == 2:
+            post = self.db["image-matrix"]
+            return post.find({"doc_type": doc_type})
+        else:
+            return ValueError("Category out of scope.")
 
     def __call__(self, *args, **kwargs):
         pass

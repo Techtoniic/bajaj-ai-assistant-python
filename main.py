@@ -6,33 +6,39 @@ from mongodb import db
 from matching.similarity import SimilarityCalc
 from matching.segmentation import ImageSegment
 from matching.feature_extraction import FeatureExtractionUsingVGG16
+from template import TemplateMatching
 import random
 from PIL import Image
 from bson.binary import Binary
 import io
 
-"""ocr = OCRTesseract("report.jpg", "./test/")
+
+ocr = OCRTesseract("report.jpg", "./test/")
 text = ocr()
 print(text)
 
 response, jsn = DataPromptGPT().getOutput(text, category = 1)
 print(jsn)
 
+
+"""
 entry = {"invoice_no": jsn[1], "customer_name": jsn[0], "date": jsn[3], "total_cost": jsn[2], "company": jsn[4]}
 id = db.Database().addData(entry, category = 1)
 
-print(id)"""
-
+print(id)
+"""
 
 customer_id = random.choice(range(1,1000))
 doc_type = "report"
 filename = ""
 header, body, footer = ImageSegment.HBFCrop("./test/report.jpg")
+
 # header_feat = FeatureExtractionUsingVGG16().extract(header)
-img_bytes = io.BytesIO()
-body.save(img_bytes, format='PNG')
-img_binary = Binary(img_bytes.getvalue())
-print(body)
+# img_bytes = io.BytesIO()
+# body.save(img_bytes, format='PNG')
+# img_binary = Binary(img_bytes.getvalue())
+# print(body)
+
 # body_feat = Binary(img_binary)
 # footer_feat = FeatureExtractionUsingVGG16().extract(footer)
 # print(header_feat, body_feat, footer_feat)
@@ -45,3 +51,18 @@ print(body)
 # print(SimilarityCalc().sift(body_feat, body_feat))
 # print(SimilarityCalc().ssd(header_feat, header_feat))
 # print(SimilarityCalc().ncc(body_feat, body_feat))
+
+# header, body, footer = ImageSegment.HBFCrop("./test/report.jpg")
+
+header_feat = FeatureExtractionUsingVGG16().extract(header)
+footer_feat = FeatureExtractionUsingVGG16().extract(footer)
+
+tm = TemplateMatching()
+headerScore = tm.headerMatch("report", header_feat)
+footerScore = tm.footerMatch("report", footer_feat)
+bodyScore = tm.bodyMatch("report", body)
+stringScore = tm.contentMatch(jsn)[0]
+
+# print(headerScore, footerScore, bodyScore, stringScore)
+returnUI = {"filename": headerScore[1], "customer_id": headerScore[0], "header_percen": headerScore[2], "body_percen": bodyScore[1][1], "footer_percen": footerScore[2], "content_percen": len(stringScore), "img": 0,"fraud_score": None}
+print(returnUI)
