@@ -1,0 +1,126 @@
+[33mWARNING[0m:  [20-12-2023 15:44:50] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[33mWARNING[0m:  [20-12-2023 15:45:16] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-12-2023 15:45:17] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component System
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component SqliteDB
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component Posthog
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-12-2023 15:45:17] Starting component SegmentAPI
+[32mINFO[0m:     [20-12-2023 15:45:17] Started server process [[36m17564[0m]
+[32mINFO[0m:     [20-12-2023 15:45:17] Waiting for application startup.
+[32mINFO[0m:     [20-12-2023 15:45:17] Application startup complete.
+[32mINFO[0m:     [20-12-2023 15:45:17] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-12-2023 15:45:21] ::1:56727 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [20-12-2023 15:45:22] ::1:56727 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [20-12-2023 15:45:54] Shutting down
+[32mINFO[0m:     [20-12-2023 15:45:54] Waiting for application shutdown.
+[32mINFO[0m:     [20-12-2023 15:45:54] Application shutdown complete.
+[32mINFO[0m:     [20-12-2023 15:45:54] Finished server process [[36m17564[0m]
+[33mWARNING[0m:  [20-12-2023 16:25:15] chroma_server_nofile is not supported on Windows. chroma_server_nofile will not be set.
+[32mINFO[0m:     [20-12-2023 16:25:15] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component System
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component SimpleAssignmentPolicy
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component SqliteDB
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component Posthog
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [20-12-2023 16:25:15] Starting component SegmentAPI
+[32mINFO[0m:     [20-12-2023 16:25:15] Started server process [[36m18652[0m]
+[32mINFO[0m:     [20-12-2023 16:25:15] Waiting for application startup.
+[32mINFO[0m:     [20-12-2023 16:25:15] Application startup complete.
+[32mINFO[0m:     [20-12-2023 16:25:15] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [20-12-2023 16:25:30] ::1:57778 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:25:30] ::1:57778 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:29:39] ::1:57815 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:29:39] ::1:57815 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:29:48] ::1:57819 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:29:48] ::1:57819 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 16:29:48] ::1:57820 - "GET /api/v1/collections/all-new-documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:30:25] ::1:58717 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:30:25] ::1:58717 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:39:35] ::1:58820 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:39:35] ::1:58820 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:39:45] ::1:58822 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:39:45] ::1:58822 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:39:45] ::1:58823 - "GET /api/v1/collections/all-new-documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:41:19] ::1:58834 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:41:19] ::1:58834 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:41:28] ::1:58838 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:41:28] ::1:58838 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:41:28] ::1:58839 - "GET /api/v1/collections/all-new-documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:13] ::1:58901 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:13] ::1:58901 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:23] ::1:58904 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:23] ::1:58904 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:23] ::1:58905 - "GET /api/v1/collections/all-new-documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[36mDEBUG[0m:    [20-12-2023 17:46:23] Starting component PersistentLocalHnswSegment
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id1
+[33mWARNING[0m:  [20-12-2023 17:46:23] Add of existing embedding ID: id2
+[32mINFO[0m:     [20-12-2023 17:46:23] ::1:58905 - "POST /api/v1/collections/2ba5b855-b0cc-4fae-82a1-b0dda333bc29/get HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:50] ::1:58914 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:46:50] ::1:58914 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:47:00] ::1:58917 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:47:00] ::1:58917 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:47:00] ::1:58918 - "GET /api/v1/collections/all-new-documents?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:47:00] ::1:58918 - "POST /api/v1/collections/2ba5b855-b0cc-4fae-82a1-b0dda333bc29/get HTTP/1.1" 200
+[32mINFO[0m:     [20-12-2023 17:48:08] ::1:58929 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [20-12-2023 17:48:09] ::1:58929 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [20-12-2023 17:48:10] ::1:58929 - "GET / HTTP/1.1" 404

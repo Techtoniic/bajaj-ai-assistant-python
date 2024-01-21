@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 from pytesseract import image_to_string
+from PIL import Image
 
 class OCRTesseract:
 
@@ -16,6 +17,7 @@ class OCRTesseract:
         # Checking if any error occur during reading the images
         try:
             self.img = cv2.imread(self.path + self.filename)
+            # self.img = Image.open(self.path + self.filename)
         except Exception as e:
             print(f"Error loading image: {e}")
         # self.display(self.img)
@@ -30,6 +32,9 @@ class OCRTesseract:
 
     def grayscale(self):
         gray_image = cv2.cvtColor(self.img, cv2.COLOR_BGR2GRAY)
+        # gray_image = self.img.convert("L")
+        # pil_image = Image.fromarray(cv2.cvtColor(np.array(self.img), cv2.COLOR_BGR2RGB))
+        # gray_image = pil_image.convert("L")
 
         if self.flag:
             cv2.imwrite(self.path + "gray_.png", gray_image)
@@ -37,7 +42,7 @@ class OCRTesseract:
         return gray_image
 
     def binarization(self, gray_im):
-        thresh, im_bw = cv2.threshold(gray_im, 200, 230, cv2.THRESH_BINARY)
+        thresh, im_bw = cv2.threshold(np.array(gray_im), 200, 230, cv2.THRESH_BINARY)
 
         if self.flag:
             cv2.imwrite(self.path + "binary_.png", im_bw)
