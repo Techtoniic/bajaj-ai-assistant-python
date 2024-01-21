@@ -66,3 +66,31 @@ stringScore = tm.contentMatch(jsn)[0]
 # print(headerScore, footerScore, bodyScore, stringScore)
 returnUI = {"filename": headerScore[1], "customer_id": headerScore[0], "header_percen": headerScore[2], "body_percen": bodyScore[1][1], "footer_percen": footerScore[2], "content_percen": len(stringScore), "img": 0,"fraud_score": None}
 print(returnUI)
+
+import pika
+import json
+
+def send_json_data_to_queue(json_data):
+    try:
+        connection = pika.BlockingConnection(pika.ConnectionParameters("localhost"))
+        channel = connection.channel()
+
+        channel.queue_declare(queue="decision-queue", durable=True)
+
+        channel.basic_publish(
+            exchange="",
+            routing_key="decision-queue",
+            body = json.dumps(json_data),
+            properties=pika.BasicProperties(
+                delivery_mode=2, # Make the message persistent
+            ),
+        )
+
+        print(f" [x] Sent JSON data to the queue")
+
+        connection.close()
+
+    except Exception as e:
+        raise e
+
+send_json_data_to_queue(returnUI)
